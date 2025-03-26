@@ -60,7 +60,7 @@ try {
     $rps->status($rps::STATUS_NORMAL);
     $rps->tipo($rps::TIPO_RPS);
     
-    $timezone = new \DateTimeZone('America/Sao_Paulo');
+    $timezone = new \DateTimeZone('America/Bahia');
     $rps->dataEmissao(new \DateTime("now", $timezone));
     $rps->municipioPrestacaoServico('999'); //999 em ambiente de produção
     $rps->naturezaOperacao($rps::NATUREZA_INTERNA);
